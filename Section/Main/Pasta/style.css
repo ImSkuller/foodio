@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+
+/* Basic Styling */
+
+:root {
+    --gold: hsl(38, 61%, 73%);
+    --black: hsla(180, 2%, 8%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --green: rgb(134, 255, 112);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+
+/* Navigation Bar Section */
+
+nav{
+    width: 100%;
+    height: 10%;
+}
+
+nav .wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 1%;
+    justify-content: space-around;
+}
+
+nav .wrapper .logo img{
+    width: 100%;
+    height: 90%;
+    margin-top: 7%;
+    margin-left: -100%;
+
+}
+
+nav .wrapper .links{
+    display: flex;
+    align-items: center;
+    margin-right: -13%;
+}
+
+nav .wrapper .links a{
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 25px;
+    position: relative;
+    font-size: 1.4rem;
+}
+
+nav .wrapper .links a::before{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 4px;
+    background-color: var(--gold);
+    width: 0%;
+    transition: 0.3s ease;
+}
+
+nav .wrapper .links a:hover::before{
+    width: 100%;
+}
+
+
+
+.section-heading {
+    font-size: 4.5rem;
+    margin: 7rem 2rem 0 5rem;
+    color: var(--gold);
+}
+
+.main-detail {
+    margin: 1rem 0 1.5rem 0;
+}
+
+.detail-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 92%;
+    margin: 6rem 1rem 0 4rem;
+    margin-top: 2rem;
+    gap: 3%;
+    border-radius: 8px;
+}
+
+.detail-card {
+    min-height: 280px;
+    height: 100%;
+    background-color: var(--black);
+    border-radius: 8px;
+    margin: 1% 0;
+    box-shadow: rgba(176, 176, 176, 0.2) 2px 2px 2px 2px;
+}
+
+.detail-card:hover {
+    background-color: transparent;
+    border: 2px solid var(--gold);
+    cursor: pointer;
+}
+
+.detail-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.8);
+}
+
+.detail-desc {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 3%;
+    width: 100%;
+
+}
+
+.detail-sub {
+    font-size: 12px;
+    color: var(--white);
+    letter-spacing: 0;
+    margin: 1% 0;
+}
+
+.detail-sub span{
+    color: var(--gold);
+}
+
+.price {
+    color: var(--white);
+}
+
+.price span {
+    color: var(--green);
+}
+
+.detail-name button {
+    width: 120px;
+    height: 40px;
+    margin-top: 1%;
+    align-items: center;
+    margin-bottom: 5%;
+    background: var(--gold);
+    border-radius:10px ;
+    color: var(--black);
+    font-weight: 700;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.detail-name button:hover{
+    color: var(--gold);
+    background-color: transparent;
+    border: 2px solid var(--gold);
+}
+
+
+footer {
+    text-align: center;
+    color: var(--white);
+    background-color: black;
+}
+
+footer .container .brand {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+footer .menu li {
+    display: inline-block;
+    margin: 0.7em;
+    text-align: center;
+}
+
+footer .menu li a {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+footer p{
+    margin: 0 auto;
+}
+
+footer .media-icons {
+    margin: 1.5em 0;
+}
+
+footer .media-icons li {
+    display: inline-block;
+    margin: 0.7em;
+}
+
+footer .media-icons li a {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+footer .media-icons li a:hover {
+    color: var(--green);
+    transition: 0.5s;
+}
+
+footer .menu li a:hover {
+    color: var(--green);
+    transition: 0.5s;
+}
+
+footer .container .brand:hover {
+    color: var(--white);
+    transition: 0.5s;
+}
